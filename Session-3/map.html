@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Map Demo</h1>
+    <script>
+        let map= new Map();
+        map.set(1,"alex");
+        map.set(2,"bob");
+        map.set(3,"catty");
+        map.set(4,"david");
+
+        console.log(map);
+        console.log("Size of Map: "+map.size);
+        console.log("Value of Key 3: "+map.get(3));
+        console.log(map.delete(1));
+        console.log(map);
+        map.clear();
+        console.log(map);
+
+    </script>
+</body>
+</html>

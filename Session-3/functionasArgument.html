@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paasing Function as Argument</title>
+</head>
+<body>
+    <script>
+        //to resolve the async functionality we pass function as a parameter also called 
+        //as callback
+        //this data is actully loadinng from server
+        function loadData(callback){
+
+            setTimeout(function(){
+                console.log("Data Loaded successfully");
+                callback();
+            },2000)
+            //after waiting of 2 sec the first parameter function will execute
+        }
+        var displayData=function(){
+            console.log("Data Displayed which is loaded")
+        }
+
+        loadData(displayData); //passing function variable as argument
+        //displayData();
+    </script>
+</body>
+</html>

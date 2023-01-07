@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>closure</title>
+</head>
+<body>
+    <script>
+        let x=10; //global variable
+        function test(){
+            let x=20;
+            console.log("Inner variable X: "+x);
+        }
+        test();
+        console.log("Outer Variable X: "+x)
+
+        function scope(){
+
+            if(true){
+                var a= "apple";
+                let b= "ball";
+                const c= "cat";
+            }
+
+            console.log(a);//accesible (Parent Scope)
+            console.log(b + c); // not accessible (block scope)
+        }
+        scope();
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var add= (a,b)=>a+b;
+        var sub= (a,b)=>a-b;
+        //callback
+        var data= (callback)=> callback(10,20)
+        //let's call thid data function and pass function as an argument
+        console.log("Addition: "+data(add));
+        console.log("Subtraction: "+data(sub));
+
+        //let's do function returning a function
+        var mul=(a) => (b)=> a*b;
+        var div=(a) => (b)=> a/b;
+
+        console.log("Multiplication: "+mul(10)(20));
+        console.log("Division: "+div(10)(5));
+
+    </script>
+</body>
+</html>

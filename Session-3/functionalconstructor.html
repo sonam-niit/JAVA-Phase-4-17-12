@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functional Constructor</title>
+</head>
+<body>
+    <script>
+        //functional Constructor
+        function Employee(name, designation, yearOfBirth){
+            this.name=name;
+            this.designation=designation;
+            this.yearOfBirth= yearOfBirth;
+        }
+        //prototype
+        Employee.prototype.calculateAge= function(){
+            console.log("Current Age of "+ this.name+" "+ (2023- this.yearOfBirth))
+        }
+        var e1= new Employee("Sonam","Senior Trainer", "1991");
+        var e2= new Employee("Alex","Program Manager","1990");
+
+        console.log(e1);
+        console.log(typeof(e1))
+        console.log(e2);
+        e1.calculateAge();
+        e2.calculateAge();
+
+    </script>
+</body>
+</html>
