@@ -1,0 +1,157 @@
+Typescript
+------------
+build on the top of JAVAscript
+
+backend: java/c#/python/.net/c/c++ (strictly typed languages)
+
+frontend: you required data from backend
+
+code in typescript --> transpile them in js --> run
+
+JS --> as a client side scripting (run a js code then you have to embbed the code in HTML page)
+
+we can also run JS as a server programming
+
+Node JS --> as server side scripting
+
+install node js
+-------------------------
+
+check version
+>node -v
+>npm -v
+
+instal typescript
+
+>npm install typescript -g
+
+check typescript version
+>tsc -v
+
+then create typescript file using ts extention 
+
+example first.ts
+
+compile using below command
+
+>tsc first.ts
+
+if compiled successfully then it will create first.js file
+
+to run use below command
+
+>node first.js
+
+_______________________________________________________________________________
+install Angular
+>npm install -g @angular/cli
+
+after installation check angular version
+>ng version
+
+let's create an angular application
+> ng new firstapp
+
+(firstapp is the name of my application)
+
+move to the application folder
+>cd firstapp
+
+let's run application
+>ng serve
+
+Any component
+---------------------
+four files
+
+ts -- main file of component through which all others file connected.
+css- styling
+html- template
+spec.ts - testing purpose
+
+open ts file and check the annotation @component where you can see the template file and css file.
+
+As this app component is the root component so you can also see 2 more files in that folder.
+
+app.module.ts
+------------------
+main file, where you can add all your import export and declarations too.
+
+another one is routing file which will help us to create routes.
+*********************************************************************
+
+Angular applications are single page application. by default it provides app component as root component.
+
+when we are creating a big application we can't put everything in single component. so we will divide our code in multiple components and then we include them in app component.
+
+to create component use below command
+
+>ng generate component compname (ng g c compname)
+
+create librray
+> ng g l mylib
+
+create component under library
+>ng g c comp1 --project mylib
+
+How to add bootstrap in Angular application
+-------------------------------------------------
+there 3 ways to add bootstrap in app
+
+1. open index.html file and include CDN files of bootstrap.
+
+2. install bootstrap by using
+
+	>npm install bootstrap
+
+	> update styles.css file by importing bootstrap css file
+
+              @import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+3. If you have downloaded the bootstrap files to your local system then those path you can add in your angular.json file.
+
+	"styles": [
+              "src/styles.css",
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css"
+            ],
+            "scripts": ["./node_modules/bootstrap/dist/js/bootstrap.min.js"]
+
+as this is the main config file. if you chnage this file then you have to execute ng serve command again to load it.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
