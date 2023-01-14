@@ -16,7 +16,8 @@ export class ProductsComponent {
   flag:boolean=false;
   show():void{
     this.flag=!this.flag
-    console.log("You have clicked on this button "+this.flag)
+    console.log("You have clicked on this "+
+    "button "+this.flag)
   }
   name:string="Sonam Soni"
 }
