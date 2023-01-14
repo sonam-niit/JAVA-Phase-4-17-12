@@ -7,13 +7,15 @@ import { HeaderComponent } from './header/header.component';
 import { DatainteractionComponent } from './datainteraction/datainteraction.component';
 import { ProductsComponent } from './products/products.component';
 import { FormsModule } from '@angular/forms';
+import { ChildComponent } from './child/child.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     DatainteractionComponent,
-    ProductsComponent
+    ProductsComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,

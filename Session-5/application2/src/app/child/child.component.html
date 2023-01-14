@@ -1,0 +1,5 @@
+<h1>This is Child Component</h1>
+Enter Child's Message:<input type="text" #ctext (keyup)="onchange(ctext.value)"/>
+<!-- when the key typed it will call the method named onchange and pass the data
+which is entered in the textfield-->
+<h3>Data Coming from parent component is {{pdata}}</h3>

@@ -1,8 +1,9 @@
 <div class="container">
-  <h1>Welcome to My Shopping cart Application</h1>
+  <h1>App Component (Parent Component)</h1>
+  The Message came from child component {{cdata}}
+  <br><br>
+  Enter message: <input type="text" #ptext (keyup)="0"/>
 
-  <!--included component-->
-  <app-products></app-products>
-  <!-- <app-header></app-header>
-  <app-datainteraction></app-datainteraction> -->
+  <!-- passing data to child component-->
+  <app-child [pdata]="ptext.value" (cevent)="cdata=$event"></app-child>
 </div>
