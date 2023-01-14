@@ -13,7 +13,11 @@
             <td>{{p.name}}</td>
             <td [class.stock]="true">{{p.available}}</td>
             <td>{{p.price}}</td>
-            <td [style.font-weight]="700">{{p.rating}}</td>
+            <td [style.color]="p.rating>4.4?'green':'red'" [style.font-weight]="700">{{p.rating}}</td>
         </tr>
     </tbody>
 </table>
+<button class="btn btn-primary" (click)="show()">Click Here</button>
+<p *ngIf="flag">Welcome to my Paragraph</p>
+Enter your name:<input type="text" [(ngModel)]="name">
+<h5>My name is {{name}}</h5>

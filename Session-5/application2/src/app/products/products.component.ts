@@ -13,4 +13,10 @@ export class ProductsComponent {
     {id:3,name:"Eraser",available:"20-02-2023",price:3,rating:4.2},
     {id:4,name:"Scale",available:"29-01-2023",price:15,rating:4.1}
   ]
+  flag:boolean=false;
+  show():void{
+    this.flag=!this.flag
+    console.log("You have clicked on this button "+this.flag)
+  }
+  name:string="Sonam Soni"
 }
