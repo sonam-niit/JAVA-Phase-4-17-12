@@ -1,0 +1,31 @@
+<H1>Pipe Demo</H1>
+<h3>Uppercase and Lowercase Pipe</h3>
+<hr>
+<p>{{name}}, after applying pipe {{name | uppercase}}</p>
+<p>{{message}},after pipe: {{message | lowercase}}</p>
+<h3>Number Pipe</h3>
+<hr>
+<p>pi: {{pi}}</p>
+<p>pi: {{pi | number:'5.5-5'}}</p>
+<p>pi: {{pi | number:'.10-10'}}</p>
+<p>pi: {{pi | number:'.3-6'}}</p>
+<h3>Currency Pipe</h3>
+<hr>
+<!--Dfeault value of display currency is true and 
+    decimal value is .2-2 -->
+<p>{{a | currency: 'INR'}}</p>
+<p>{{a | currency: 'USD':true:'3.3-3'}}</p>
+<p>{{a | currency: 'EUR':true:'5.3-4'}}</p>
+<p>{{b | currency: 'INR':true:'5.2-4'}}</p>
+<h3>Date Pipe</h3>
+<hr>
+<p>Today is {{today}}</p>
+<p>Default:  {{today | date}}</p>
+<p>Short Date:  {{today | date : 'shortDate'}}</p>
+<p>Long Date:  {{today | date: 'longDate'}}</p>
+<p>Format:  {{today | date: 'dd/MM/yyyy'}}</p>
+<h3>Json Pipe</h3>
+<hr>
+<p>JSON Object: {{object}}</p>
+<p>JSON Object with pipe: {{object | json}}</p>
+

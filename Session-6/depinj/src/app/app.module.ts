@@ -9,6 +9,9 @@ import { Highlight } from './highlight';
 import { ColorChange } from './colorchange';
 import { SwitchdemoComponent } from './switchdemo/switchdemo.component';
 import { FormsModule } from '@angular/forms';
+import { PipedemoComponent } from './pipedemo/pipedemo.component';
+import { FormatText } from './pipes/formattext';
+import { CustompipeComponent } from './custompipe/custompipe.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { FormsModule } from '@angular/forms';
     UserlistComponent,
     Highlight,
     ColorChange,
-    SwitchdemoComponent
+    SwitchdemoComponent,
+    PipedemoComponent,
+    FormatText,
+    CustompipeComponent
   ],
   imports: [
     BrowserModule,
