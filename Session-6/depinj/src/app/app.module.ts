@@ -5,11 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserlistComponent } from './userlist/userlist.component';
 import { UserService } from './user.service';
+import { Highlight } from './highlight';
+import { ColorChange } from './colorchange';
 
 @NgModule({
   declarations: [
     AppComponent,
-    UserlistComponent
+    UserlistComponent,
+    Highlight,
+    ColorChange
   ],
   imports: [
     BrowserModule,

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { User } from '../user';
 import { UserService } from '../user.service';
 
+//Decorator
 @Component({
   selector: 'app-userlist',
   templateUrl: './userlist.component.html',
