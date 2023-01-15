@@ -7,18 +7,22 @@ import { UserlistComponent } from './userlist/userlist.component';
 import { UserService } from './user.service';
 import { Highlight } from './highlight';
 import { ColorChange } from './colorchange';
+import { SwitchdemoComponent } from './switchdemo/switchdemo.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserlistComponent,
     Highlight,
-    ColorChange
+    ColorChange,
+    SwitchdemoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [UserService],
   bootstrap: [AppComponent]

@@ -1,0 +1,12 @@
+<h1>Switch Demo</h1>
+
+Enter Any Number between 1-7: <input type="text" [(ngModel)]="num">
+<div [ngSwitch]="num">
+    <div *ngSwitchCase="1"><h3>Today is Monday</h3></div>
+    <div *ngSwitchCase="2"><h3>Today is Tuesday</h3></div>
+    <div *ngSwitchCase="3"><h3>Today is Wednesday</h3></div>
+    <div *ngSwitchCase="4"><h3>Today is Thursday</h3></div>
+    <div *ngSwitchCase="5"><h3>Today is Friday</h3></div>
+    <div *ngSwitchCase="6"><h3>Today is Saturday</h3></div>
+    <div *ngSwitchCase="7"><h3>Today is Sunday</h3></div>
+</div>
