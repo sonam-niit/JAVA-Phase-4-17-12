@@ -6,13 +6,21 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { ChildaComponent } from './childa/childa.component';
+import { ChildbComponent } from './childb/childb.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { DetailsComponent } from './details/details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    ChildaComponent,
+    ChildbComponent,
+    PagenotfoundComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,
