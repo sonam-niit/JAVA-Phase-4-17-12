@@ -7,7 +7,10 @@ export class FormatText implements PipeTransform{
     //overridden method of interface
     transform(value: string, data:string) {
         
-        return value.replace(' ',data)
+    return value.replace(' ',data)
+       // return "<div style='color:'Red''>" + value.replaceAll(' ', data) + "</div>"
+        
+
     }
 
 }
