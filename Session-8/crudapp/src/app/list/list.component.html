@@ -1,0 +1,23 @@
+<div>
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Id</th><th>Name</th><th>Email</th><th>Country</th>
+                <th>Operations</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr  *ngFor="let s of students">
+                <td>{{s.id}}</td>
+                <td>{{s.name}}</td>
+                <td>{{s.email}}</td>
+                <td>{{s.country}}</td>
+                <td><a routerLink='/details/{{s.id}}'>
+                    <button class="btn btn-success">view</button>
+                </a> &nbsp; &nbsp;
+                <button class="btn btn-danger" (click)="ondelete(s.id)">delete</button>
+            </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

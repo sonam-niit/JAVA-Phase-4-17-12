@@ -15,6 +15,7 @@ const routes: Routes = [
     {path:'',redirectTo:'childa',pathMatch:'full'},
     {path:'childa',component:ChildaComponent},
     {path:'childb',component:ChildbComponent},
+    // {path:"**",redirectTo:''}
   ]},
   {path:'contact',component:ContactComponent},
   {path:'details/:id',component:DetailsComponent},

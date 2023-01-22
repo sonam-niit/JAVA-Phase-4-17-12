@@ -1,0 +1,21 @@
+{
+  "admin": [
+    {
+      "id": 10011,
+      "pass": "Sonam@123"
+    },
+    {
+      "id": 10012,
+      "pass": "MR@Access"
+    }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "name": "some comment",
+      "desc": 1,
+      "price":255
+    }
+  ]
+  
+}

@@ -1,0 +1,28 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "sonam",
+      "email": "sonam@gmail.com",
+      "country": "india"
+    },
+    {
+      "id": 7,
+      "name": "catty",
+      "email": "cat@gmail.com",
+      "country": "US"
+    },
+    {
+      "id": 4,
+      "name": "Bob",
+      "email": "bob@gmail.com",
+      "country": "Indonesia"
+    },
+    {
+      "id": 8,
+      "name": "Alex",
+      "email": "alex@gmail.com",
+      "country": "US"
+    }
+  ]
+}
